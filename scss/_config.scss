@@ -1,0 +1,70 @@
+// Variables
+
+$black: #010101;
+$white: #fefefe;
+
+$font-nav: "Anton", sans-serif;
+
+$color-link: #e8a1ff;
+$color-link-active: #fff4a1;
+
+$color-main: #a1d0ff;
+$color-comp-coral: #ffc5a1;
+$color-comp-yellow: #fff4a1;
+$color-comp-purple: #866092;
+$color-facebook: #3b5998;
+$color-twitter: #2aa3f0;
+
+// transformation mixins
+
+@mixin easeOut {
+  transition: 0.5s ease-out all;
+}
+
+// mobile mixins
+
+@mixin screenSm {
+  @media screen and (min-width: 500px) {
+    @include content;
+  }
+}
+
+@mixin screenMd {
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    @include content;
+  }
+}
+
+@mixin screenLg {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @include content;
+  }
+}
+
+@mixin screenXl {
+  @media screen and (min-width: 1025px) {
+    @include content;
+  }
+}
+
+// utility classes
+
+.bg-black {
+  background: $black;
+}
+
+.bg-white {
+  background: $white;
+}
+
+.color-facebook {
+  background: $color-facebook;
+}
+
+.color-twitter {
+  background: $color-twitter;
+}
+
+.color-instagram {
+  background: $color-comp-purple;
+}
